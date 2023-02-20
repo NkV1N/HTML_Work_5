@@ -1,0 +1,180 @@
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказ проекта</title>
+    <style>
+        body {
+            background-color: lightgoldenrodyellow;
+        }
+        h1 {
+            color: darkblue;
+        }
+        span {
+            color: red;
+        }
+        .text_vvod {
+            width: 400px;
+            height: 150px;
+        }
+        a {
+             color: blue;
+            text-decoration: none;
+        }
+        a:hover {
+            color: lightsalmon;
+            text-decoration: underline;
+        }
+        #blue{
+            color: #0000CC; 
+            font-family: Tahoma;
+        }
+        #blue_2{
+            color: #3366FF; 
+            font-family: Tahoma;
+        }
+        #brown{
+            color: #996633; 
+            font-family: Times;
+        }
+        #brown_2{
+            color: #CC6600; 
+            font-family: Times;
+        }
+        .menu { 
+            background-color: #CCFFFF;
+        }
+        #lisii {
+            color: blue;
+            text-decoration: none;
+        }   
+        #lisii:hover {
+            color: lightsalmon;
+            text-decoration: underline;
+        }
+        #zakaz {
+            color: blue;
+            text-decoration: none;
+            font-size: 20px;
+        }   
+        #zakaz:hover {
+            color: lightsalmon;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <table width="100%" height="100%">
+        <tr>
+            <td colspan="2">
+                <font color="blue" face="Arial" size="5">
+                    <marquee bgcolor="lightblue">
+                       <b>КАТАЛОГ ГОТОВЫХ АРХИТЕКТУРНЫХ РЕШЕНИЙ</b> 
+                    </marquee>
+                </font>
+            </td>
+        </tr>
+        <tr>
+            <td class="menu" valign="top" width="20%">
+                <a href="Final_zadanie.html"><img src="logo_myhouse.gif"></a><br><br>
+                <a href="zakaz.html" id="zakaz">Заказать проект</a>
+                <h4 id="blue">Категории проектов</h4>
+                <ol id="blue_2">
+                    <li ><a href="#" id="lisii">Проекты таунхаусов и блокированных домов</a></li>
+                    <li>Проекты домов на две семьи</li>
+                    <li>Проекты узких домов</li>
+                    <li>Проекты бань</li>
+                </ol>
+
+                <h4 id="blue">Каталог архитектурных проектов</h4>
+                <ul id="blue_2">
+                    <li>Проекты кирпичных домов</li>
+                    <li>Проекты домов из газобетона и пенобетона</li>
+                    <li>Проекты домов из бруса и бревна</li>
+                    <li>Проекты каркасных домов</li>
+                </ul>
+            
+                <h4 id="brown">Площади домов</h4>
+                <ul id="brown_2">
+                    <li>до 150 м2</li>
+                    <li>от 150 до 250 м2</li>
+                    <li>от 250 до 400 м2</li>
+                    <li>от 400 м2</li>
+                </ul>
+            </td>
+            <td class="form" valign="top">
+                <h1>Заказ проекта</h1>
+    
+            <p>
+                Вы можете написать нам письмо на электронную почту<br>
+                <b><a href="mailto:nikitabn1804@gmail.com">Написать письмо</a></b>
+            </p>
+
+            <p>
+                Здесь Вы можете заполнить форму заказа для покупки проекта<br>
+                Поля со <span>*</span> обязательны для заполнения.
+            </p>
+
+            <form action="order">
+                <table border="1">
+                    <tr class="text-row">
+                        <td>Текст заказа в произвольной форме</td>
+                        <td class="text-row-field"><input type="text" name="discription" class="text_vvod"></td>
+                    </tr>
+                    <tr>
+                        <td>Фамилия, имя, отчество<span>*</span></td>
+                        <td><input type="text" name="fullname"></td>
+                    </tr>
+                    <tr>
+                        <td>Телефон<span>*</span></td>
+                        <td><input type="text" name="phone"></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail<span>*</span></td>
+                        <td><input type="text" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Адрес</td>
+                        <td><input type="text" name="address"></td>
+                    </tr>
+                    <tr>
+                        <td>Выберите категорию проекта:</td>
+                        <td>
+                            <select name="category">
+                                <option value="townhouse">Проекты таунхаусов и блокированных домов</option>
+                                <option value="two_family">Проекты домов на две семьи</option>
+                                <option value="uzkie">Проекты узких домов</option>
+                                <option value="banya">Проекты бань</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Выберите материал:</td>
+                        <td>
+                            <select name="material">
+                                <option value="kirpich">Проекты кирпичных домов</option>
+                                <option value="gazo_peno">Прокты домов из газобетона и пенобетона</option>
+                                <option value="brus_brevno">Проекты домов из бруса и бревна</option>
+                                <option value="karkas">Проекты каркасных домов</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ваш возраст:</td>
+                        <td>
+                            До 18 <input type="radio" name="age" value="до 18"><br>
+                            18-50 <input type="radio" name="age" value="18-50"><br>
+                            Старше 50 <input type="radio" name="age" value="Старше 50">
+                        </td>
+                    </tr>
+                </table>
+                <br><input type="submit" value="Заказать">
+                <input type="reset" value="Очистить">
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
